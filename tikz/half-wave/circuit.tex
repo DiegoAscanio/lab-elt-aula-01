@@ -1,0 +1,11 @@
+\documentclass{standalone}
+\usepackage{circuitikz}
+
+\begin{document}
+\begin{circuitikz}
+    \draw (0,0) to[sV, l=$12V_{AC}$] (0,3)
+    to[D*, l=D] (3,3);
+    \draw (3,3) to[R, l=$2.2k\Omega$] (3,0) -- (0,0);
+    \node at (0, -1) {};
+\end{circuitikz}
+\end{document}

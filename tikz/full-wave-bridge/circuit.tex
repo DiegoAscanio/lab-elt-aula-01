@@ -1,0 +1,21 @@
+\documentclass{standalone}
+\usepackage{circuitikz}
+
+\begin{document}
+\begin{circuitikz}
+    \node at (0, 6) {};
+    \draw (0,-5) -- (0,-1) to[sV, l=$12V_{AC}$] (0,1) -- (0,5) -- (10, 5);
+    \filldraw[black] (10,5) circle (2pt) node[anchor=south] {A};
+    \draw (5,0) -- (7,2) to[D*, l=$D_2$] (8,3) -- (9, 4) -- (10, 5);
+    \filldraw[black] (5, 0) circle (2pt) node[anchor=east] {C};
+    \draw (5,0) -- (7,-2) to[D*, l=$D_3$] (8,-3) -- (9, -4) -- (10, -5);
+    \filldraw[black] (10, -5) circle (2pt) node[anchor=north] {B};
+    \draw (10, -5) -- (0, -5);
+    \draw (10, 5) -- (12, 3) to [D*, l=$D_1$] (13, 2) -- (14, 1) -- (15, 0);
+    \filldraw[black] (15, 0) circle (2pt) node[anchor=west] {D};
+    \draw (10, -5) -- (12, -3) to [D*, l=$D_4$] (13, -2) -- (14, -1) -- (15, 0);
+    \draw (5, 0) -- (8, 0) to [R, l=$2.2 k\Omega$] (12, 0) -- (13, 0) -- (15, 0);
+    \node at (10, -1) {$+ V_{out} -$};
+    \node at (0, -6) {};
+\end{circuitikz}
+\end{document}
