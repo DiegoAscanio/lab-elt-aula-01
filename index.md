@@ -294,3 +294,11 @@ Como podemos observar na Figura 4 a saída da tensão retificada é dada pela di
 1. MALVINO, A. P.; BATES, D. J. Eletrônica. Vol. 1. 7. ed. São Paulo: McGraw-Hill, 2007.
 2. BOYLESTAD, R. L.; NASHELSKY, L. Dispositivos Eletrônicos e Teoria de Circuitos. 8. ed. São Paulo: Pearson Prentice Hall, 2004.
 3. DEQUIGIOVANI, T. Roteiro Experimental — Circuitos Retificadores. Disponível em: [https://professor.luzerna.ifc.edu.br/tiago-dequigiovani/wp-content/uploads/sites/22/2016/02/TD_ELB_Roteiros.Experimentais_1.pdf](https://professor.luzerna.ifc.edu.br/tiago-dequigiovani/wp-content/uploads/sites/22/2016/02/TD_ELB_Roteiros.Experimentais_1.pdf). Acesso em: 18 de Março de 2024.
+
+## Formulário
+
+|                              | Tensão Eficaz                                            | Tensão Média                                    |
+| ---------------------------- | -------------------------------------------------------- | ----------------------------------------------- |
+| Fórmula Geral                | \\(V_{ef} = \frac{1}{T} \sqrt{\int_{0}^{T} v^2(t) dt}\\) | \\(V_{CC} = \frac{1}{T} \int_{0}^{T} v(t) dt\\) |
+| Retificador de Meia Onda     | \\(V_{o} = \frac{V_{ef}}{\sqrt{2}}\\)                    | \\(V_{CC} = \frac{\sqrt{2} V_{ef}}{\pi}\\)      |
+| Retificador de Onda Completa | \\(V_{o} = V_{ef}\\)                                     | \\(V_{CC} = \frac{2 \sqrt{2} V_{ef}}{\pi}\\)    |
